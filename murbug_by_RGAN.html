@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Script</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4">
+    <div id="main" class="hidden text-left">
+        <p>That Script By Rizky_Sanjaya For Private</p>
+        <p>Please Select The Method Below</p>
+        <ul>
+            <li>- Xenon WhatsApp 💀 7d +628xxxx</li>
+            <li>- Whatsapp Bug Permanently +628xxxx</li>
+            <li>- Murbug Andro +628xxxx</li>
+            <li>- System UI Not Respons using IMEI</li>
+            <li>- System UI Not Respons +628xxxx [ not recommended ]</li>
+            <li>- Xenon WhatsApp IOS [ Please Login ]</li>
+            <li>- Bug Whatsapp IOS [ Please Login ]</li>
+            <li>- Are You Idiot [ Risk Method ]</li>
+            <li>- Crash System UI +628xxxx</li>
+        </ul>
+    </div>
+
+    <div id="input-section" class="text-left">
+        <label for="command" class="block mb-2">Enter Command:</label>
+        <input type="text" id="command" class="w-full p-2 mb-4 text-black" placeholder="./main">
+        <button onclick="showMain()" class="px-4 py-2 bg-blue-500">Submit</button>
+    </div>
+
+    <div id="method-section" class="hidden text-left">
+        <label for="method" class="block mb-2">Select Method:</label>
+        <select id="method" class="w-full p-2 mb-4 text-black">
+            <option value="Xenon WhatsApp 💀 7d +628xxxx">Xenon WhatsApp 💀 7d +628xxxx</option>
+            <option value="Whatsapp Bug Permanently +628xxxx">Whatsapp Bug Permanently +628xxxx</option>
+            <option value="Murbug Andro +628xxxx">Murbug Andro +628xxxx</option>
+            <option value="System UI Not Respons using IMEI">System UI Not Respons using IMEI</option>
+            <option value="System UI Not Respons +628xxxx [ not recommended ]">System UI Not Respons +628xxxx [ not recommended ]</option>
+            <option value="Xenon WhatsApp IOS [ Please Login ]">Xenon WhatsApp IOS [ Please Login ]</option>
+            <option value="Bug Whatsapp IOS [ Please Login ]">Bug Whatsapp IOS [ Please Login ]</option>
+            <option value="Are You Idiot [ Risk Method ]">Are You Idiot [ Risk Method ]</option>
+            <option value="Crash System UI +628xxxx">Crash System UI +628xxxx</option>
+        </select>
+        <button onclick="completeInput()" class="px-4 py-2 bg-blue-500">Submit</button>
+    </div>
+
+    <div id="done-section" class="hidden text-left">
+        <p>DONE XENON BY RGAN</p>
+    </div>
+
+    <script>
+        function showMain() {
+            const command = document.getElementById('command').value;
+            if (command === './main') {
+                document.getElementById('main').classList.remove('hidden');
+                document.getElementById('input-section').classList.add('hidden');
+                document.getElementById('method-section').classList.remove('hidden');
+            }
+        }
+
+        function completeInput() {
+            document.getElementById('method-section').classList.add('hidden');
+            document.getElementById('done-section').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
